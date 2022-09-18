@@ -1,13 +1,13 @@
-function ptRow(n){
+const ptRow = (n) => {
     if(n < 0){
-        return "Invalid Value";
+        return [];
     }
     if(n == 0){
         return [1];
     }
 
         let pyramid = []; //initializing main array(triangle)
-    for(let row = 0; row < n; row++){
+    for(let row = 1; row <= n; row++){
         let rowList = [];//each time the row variable implements, it will create a new row
         for(let column = 0; column <= row; column++){ //create a "column" for each row depending on the row count
             if(column == 0 || column == row) { //will add a 1 to the first and last column
@@ -25,11 +25,21 @@ function ptRow(n){
         
 
     }
-    return pyramid[n - 1];// bc index for the traingle starts at 0, have to return n-1 row
+    return pyramid[n];// bc index for the traingle starts at 0, have to return n-1 row
 }
 
+console.log(ptRow(5));
 
+document.getElementById("enterButton").onclick = () => {
+    var nthInt = document.getElementById('intText').value;
+    let nthRow = ptRow(nthInt);
+    let display = document.getElementById('display');
+    display.textContent = ` ${nthRow}`;
+    }
 
-// console.log(ptRow(3));
-
+// let enterButton = document.getElementById('enterButton');
+// enterButton.addEventListener('click', () => {
+//     let nthInt = document.getElementById('intText').value;
+//     console.log(nthInt);
+// })
 

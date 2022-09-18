@@ -1,23 +1,45 @@
 body {
     background: #2e703b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 500px;
 }
 
-#randomInt {
-    width: 500px;
-    height: 100px;
-    margin-top: 200px;
+#title{
+    font-size: 50px;
+    width:inherit;
+    text-align: center;
+}
+
+#intText{
+    width:inherit;
+    border: #121212 solid 5px;
+    border-radius: 10px;
+    margin-top: 100px; 
+    text-align: center;
+    background-color: #ffff;
+    font-size: 50px;
+}
+
+#enterButton {
+    width:inherit;
+    border: #121212 solid 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 #display {
-    width: 500px;
-    height: 100px;
-    border: #121212 solid 5px;
-    border-radius: 10px;
+    height: 200px;
+    width:inherit;
     margin-top: 200px;
+    font-size: 30px;
+    text-align: center;
 }
