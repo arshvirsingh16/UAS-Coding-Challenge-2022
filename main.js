@@ -37,9 +37,5 @@ document.getElementById("enterButton").onclick = () => {
     display.textContent = ` ${nthRow}`;
     }
 
-// let enterButton = document.getElementById('enterButton');
-// enterButton.addEventListener('click', () => {
-//     let nthInt = document.getElementById('intText').value;
-//     console.log(nthInt);
-// })
+
 
