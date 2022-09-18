@@ -27,7 +27,6 @@ const ptRow = (n) => {
     }
     return pyramid[n];// bc index for the traingle starts at 0, have to return n-1 row
 }
-console.log(ptRow(5));
 
 document.getElementById("enterButton").onclick = () => {
     var nthInt = document.getElementById('intText').value;
